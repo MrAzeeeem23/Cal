@@ -1,0 +1,27 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,400&family=Jost&family=Righteous&display=swap" rel="stylesheet">
+    <script src="main.js"></script>  
+    <link rel="stylesheet" href="style.css">
+    <title>GST calculator</title>
+</head>
+<body>
+    <div id="box">
+        <h1>GST calculator</h1>
+        <div id="text">Net Value</div>
+        <input id="netvalueinput" onkeyup="Calculate()" type="number" placeholder="0">
+        <div id="text" class="txt">GST Rate:<p id="rangevalue">1</p>%</div>
+        <input id="GSTrateinput" oninput="Calculate(),rangevalue.innerText = this.value" min="0" max="28" value="1" type="range">
+        <div id="text">GST value</div>
+        <div id="Gstoutput">₹0</div>
+        <div id="text">Gross value</div>
+        <div id="Grossoutput">₹0</div>
+    </div>
+</body>
+</html>
